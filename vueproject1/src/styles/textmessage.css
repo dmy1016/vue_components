@@ -1,114 +1,130 @@
 .textmessage {
-    width: 344px;
-    overflow: scroll;
-    height: 560px;
-    opacity: 1;
-    background: #ffffff;
-    border: 1px solid #4f78e2;
-    border-radius: 4px;
-    box-shadow: -2px 3px 5px rgba(135, 143, 165, 0.47);
-    padding-left: 13px;
-    padding-right: 13px;
-    ;
+  width: 344px;
+  min-height: 560px;
+  opacity: 1;
+  background: #ffffff;
+  border: 1px solid #4f78e2;
+  border-radius: 4px;
+  box-shadow: -2px 3px 5px rgba(135, 143, 165, 0.47);
+  padding-left: 13px;
+  padding-right: 13px;;
+}
+
+/*给el-scrollbar父亲设置高度*/
+.el-tab-pane {
+  width: 344px;
+  height: 517px;
+}
+
+.el-scrollbar {
+  height: 100%;
+}
+
+.el-scrollbar__wrap {
+  overflow: scroll;
+  width: 105%;
+  height: 107%;
 }
 
 .textmessage ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .textmessage ul {
-    padding-left: 31px;
+  padding-left: 31px;
 }
 
 .message_item .message_title {
-    height: 24px;
-    line-height: 24px;
-    /*font-size: 16px;*/
-    font-weight: 300;
-    /*padding-left: -2px;*/
-    border-bottom: 1px solid #dcdfe6;
-    padding: 7px 0;
+  height: 24px;
+  line-height: 24px;
+  /*font-size: 16px;*/
+  font-weight: 300;
+  /*padding-left: -2px;*/
+  border-bottom: 1px solid #dcdfe6;
+  padding: 7px 0;
 }
 
 .message_item .message_title:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .message_item .message_title:hover .title {
-    color: #4f78e2;
+  color: #4f78e2;
 }
 
 .title {
-    float: left;
-    margin-left: 8px;
+  float: left;
+  margin-left: 8px;
 }
 
 .message_title i {
-    float: left;
+  float: left;
 }
 
 .count {
-    display: inline-block;
-    width: 34px;
-    float: right;
-    background: #4f78e2;
-    border-radius: 12px;
-    text-align: center;
-    color: #ffffff;
-    margin-right: 10px;
+  display: inline-block;
+  width: 34px;
+  float: right;
+  background: #4f78e2;
+  border-radius: 12px;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 10px;
 }
 
 .el-icon-arrow-right {
-    line-height: 24px;
+  line-height: 24px;
 }
 
 .el-tabs__header {
-    margin: 0 0 14px;
+  margin: 0 0 14px;
 }
-
+.el-scrollbar__view {
+  overflow-x: hidden;
+}
 .item_ul li:first-child {
-    border-top: 0;
+  border-top: 0;
 }
 
 .item_ul li {
-    height: 24px;
-    line-height: 24px;
-    border-bottom: 1px solid #dcdfe6;
-    padding: 7px 0;
+  height: 24px;
+  line-height: 24px;
+  border-bottom: 1px solid #dcdfe6;
+  padding: 7px 0;
 }
 
 
 /* 圆点 */
 
 .dot {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    opacity: 1;
-    border: 1px solid #dcdfe5;
-    box-shadow: -2px 3px 5px 0px rgba(135, 143, 165, 0.47);
-    border-radius: 10px;
-    margin-bottom: 2px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  border: 1px solid #dcdfe5;
+  box-shadow: -2px 3px 5px 0px rgba(135, 143, 165, 0.47);
+  border-radius: 10px;
+  margin-bottom: 2px;
 }
 
 .dot:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .dotbg {
-    background: #4f78e2;
+  background: #4f78e2;
 }
 
 .item_ul {
-    margin-top: 6px;
+  margin-top: 6px;
 }
 
 .item_ul li:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .item_ul li span {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 
@@ -116,13 +132,13 @@
 
 .fade-enter-active,
 .fade-leave-active {
-    transition: all .3s ease;
-    height: 70px;
-    /* 这里70px为menu-one子菜单的高度 */
+  transition: all .3s ease;
+  height: 70px;
+  /* 这里70px为menu-one子菜单的高度 */
 }
 
 .fade-enter,
 .fade-leave-to {
-    opacity: 0;
-    height: 0px;
+  opacity: 0;
+  height: 0px;
 }

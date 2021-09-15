@@ -2,6 +2,7 @@
   <div class="textmessage">
     <el-tabs v-model="activeName" @tab-click="handleClick">
       <el-tab-pane label="用户管理" name="first">
+        <el-scrollbar>
         <div class="message_item">
           <div class="message_title" @click="btnshow">
             <i class="el-icon-arrow-right"></i>
@@ -42,13 +43,13 @@
           </collapse-transition>
         </div>
         <div class="message_item">
-          <div class="message_title" @click="btnshow">
+          <div class="message_title" @click="btnshowb">
             <i class="el-icon-arrow-right"></i>
             <span class="title">背书待签收</span>
             <span class="count">12</span>
           </div>
           <collapse-transition>
-            <ul class="item_ul" v-show="isshow">
+            <ul class="item_ul" v-show="isshow2">
               <li  @click="dothandle">
                 <i :class={dot:true,dotbg:dotbg}></i>
                 <span>收到背书转让1999999条未读</span>
@@ -80,6 +81,7 @@
             </ul>
           </collapse-transition>
         </div>
+        </el-scrollbar>
       </el-tab-pane>
       <el-tab-pane label="配置管理" name="second">配置管理</el-tab-pane>
       <el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
@@ -97,6 +99,7 @@ export default {
   data() {
     return {
       isshow: false,
+      isshow2:false,
       activeName: 'first',
       dotbg: false
     };
@@ -110,6 +113,9 @@ export default {
     },
     btnshow(){
       this.isshow = !this.isshow
+    },
+    btnshowb(){
+      this.isshow2 = !this.isshow2
     }
   }
 }
