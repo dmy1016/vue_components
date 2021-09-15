@@ -10,8 +10,47 @@
           </div>
           <collapse-transition>
             <ul class="item_ul" v-show="isshow">
+              <li  @click="dothandle">
+                <i :class={dot:true,dotbg:dotbg}></i>
+                <span>收到背书转让1999999条未读</span>
+              </li>
               <li>
-                <i :class={dot:true,dotbg:dotbg} @click="dothandle"></i>
+                <i class="dot"></i>
+                <span>收到背书转让1999999条未读</span>
+              </li>
+              <li>
+                <i class="dot"></i>
+                <span>收到背书转让1999999条未读</span>
+              </li>
+              <li>
+                <i class="dot"></i>
+                <span>收到背书转让1999999条未读</span>
+              </li>
+              <li>
+                <i class="dot"></i>
+                <span>收到背书转让1999999条未读</span>
+              </li>
+              <li>
+                <i class="dot"></i>
+                <span>收到背书转让1999999条未读</span>
+              </li>
+              <li>
+                <i class="dot"></i>
+                <span>收到背书转让1999999条未读</span>
+              </li>
+            </ul>
+          </collapse-transition>
+        </div>
+        <div class="message_item">
+          <div class="message_title" @click="btnshow">
+            <i class="el-icon-arrow-right"></i>
+            <span class="title">背书待签收</span>
+            <span class="count">12</span>
+          </div>
+          <collapse-transition>
+            <ul class="item_ul" v-show="isshow">
+              <li  @click="dothandle">
+                <i :class={dot:true,dotbg:dotbg}></i>
                 <span>收到背书转让1999999条未读</span>
               </li>
               <li>
