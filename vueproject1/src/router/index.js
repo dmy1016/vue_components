@@ -17,9 +17,14 @@ export default new Router({
       children:[
         {
           path:'aic',
-          component:()=>import('../components/Aic')
+          component:()=>import('../components/Aic.vue')
         }
       ]
+    },
+    {
+      path:'/aic',
+      name:'Aic',
+      component:()=>import('../components/Aic.vue')
     },
     {
       path:'/child/:uid',
